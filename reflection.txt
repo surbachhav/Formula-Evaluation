@@ -1,0 +1,35 @@
+# Assignment 4 reflection
+
+## Submitter metadata
+
+Partner 1: Surabhi Bachhav (sb2673)
+Partner 2: Venya Sharma (vs529)
+
+Hours spent working on this assignment: 20.0
+
+## Verification questions
+
+Please use the `RpnCalc` program to answer these questions:
+
+1. How many operations are required to evaluate this expression for the surface area of a
+   dodecahedron?  (Note: `edgeLength` is a parameter of the formula and should be parsed as a
+   variable.)
+   `3 25 10 5 sqrt() * + sqrt() * edgeLength 2 ^ *`
+
+   Answer: 7
+
+2. How many operations are required to evaluate the optimized form of that expression?
+
+   Answer: 2
+
+## Reflection questions
+
+1. What part of the assignment did you find the trickiest to understand or get working?
+   Was there a particular insight or diagnostic technique that lead to a breakthrough?
+
+   Answer: Implementing the evaluateCsv method inside the CsvEvaluator class was the hardest part
+   of the assignment. This is because it required us to call on multiple classes, use a helper method,
+   and use methods (such as .print()) that we had not yet worked with before. We realized that we
+   were not using our enhanced for loop correctly. This meant that when we set a cell value based on
+   what we thought was the correct row and col and needed to access it later, we were getting the
+   wrong value. When we fixed this issue, our test cases passed.
